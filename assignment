@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Tailwind CSS</title>
+</head>
+
+<body class="">
+
+  <nav>
+    <div class="flex justify-between">
+      <ul class="flex">
+        <li class="p-2 text-lg mx-2" class="hidden md:block font-bold">LOGO</li>
+        <li class="hidden md:block text-gray-700 font-semibold text-sm p-3">Home</li>
+        <li class="hidden md:block text-gray-700 font-semibold text-sm p-3">Our Services</li>
+        <li class="hidden md:block text-gray-700 font-semibold text-sm p-3">About Us</li>
+        <li class="hidden md:block text-gray-700 font-semibold text-sm p-3">How we Work</li>
+        <li class="hidden md:block text-gray-700 font-semibold text-sm p-3">Careers</li>
+        <li class="hidden md:block text-gray-700 font-semibold text-sm p-3">Resources</li>
+      </ul>
+      <div class="hidden md:block md:p-2 md:border-2 md:mx-3 md:mt-1 md:border-blue-600 md:text-blue-600 rounded">
+        Contact Us</div>
+      <div class="md:hidden mx-3 h-6 p-2">&#8801;</div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="flex bg-blue-600 mt-2">
+    <div class="w-1/2 text-white pt-4">
+      <div class="ml-4 mt-3 font-bold text-2xl">Expert Accounting & Financial Services for Your Business</div>
+      <div class="ml-4 mt-3 text-sm">Your dependable accounting & financial services partner. Allow our professional
+        services to assist you in achieving your financial objectives.</div>
+      <div class="flex ml-4 mt-3 pb-3">
+        <div class="flex-col justify-center border-2 border-white .border-r border-opacity-50 rounded-l-md p-1">
+          <p class="text-center text-yellow-300">$10/hr</p>
+          <p class="italic text-sm">Booking Services</p>
+        </div>
+        <div class="flex-col justify-center border-2 border-white border-opacity-50 rounded-r-md p-1">
+          <p class="text-yellow-300">$20/hr</p>
+          <p class="italic text-sm">Tax Return Services</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="w-1/2">
+      <div class="p-3 ">
+        <video src="./story.mp4" controls class="h-60"></video>
+      </div>
+
+      <div class="grid grid-cols-4">
+        <div>LOGO</div>
+        <div>LOGO</div>
+        <div>LOGO</div>
+        <div>LOGO</div>
+        <div>LOGO</div>
+        <div>LOGO</div>
+        <div>LOGO</div>
+        <div>LOGO</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-2"> 
+    <div class="text-center font-bold text-2xl">Countries we work with</div>
+    <div class="flex justify-around mt-3 pt-3">
+      <div>
+        <img src="https://www.accountspoint.com/assets/Austriallia-f76c5890.png" alt="">
+          <p class="text-center">AUSTRALIA</p>
+      </div>
+      <div>
+        <img src="data:image/png;base64,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" alt="">
+      <p class="text-center">INDIA</p>
+      </div>
+      <div>
+        <img src="https://www.accountspoint.com/assets/USA-fe5cee76.png" alt="">
+      <p class="text-center">USA</p>
+      </div>
+      <div>
+        <img src="https://www.accountspoint.com/assets/UK-ac8cf864.png" alt="">
+      <p class="text-center">UK</p>
+      </div>
+    </div>
+    <div class="flex justify-around mt-3 pt-3">
+      <div class="">
+        <img src="data:image/png;base64,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" alt="">
+      <p class="text-center">SINGAPORE</p>
+      </div>
+      <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALIAAABZCAYAAACaCX4pAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGCSURBVHgB7dwxSlxRGIbhf7zahNQhhRD7QMpAUlmlCi4mZAPpsgwFN+JCBtyCneAMoxaK4Aruy/Nwzg7e4q++zWHm6a3D/bKZfz8/z//vnwZeHebyaCBAyCQImQQhkyBkEoRMgpBJEDIJQiZByCQImQQhkyBkEoRMgpBJEDIJQiZByCQImQQhkyBkEoRMgpBJEDIJQiZByCQImQQhk3A8K7IcLfPjy7f5e/5r4MXHkw/rCvlkOZ6Lr+dz8fvPwFtOCxKETIKQSRAyCUImQcgkCJkEIZMgZBKETIKQSRAyCUImQcgkCJkEIZMgZBKETIKQSRAyCUImQcgkCJkEIZMgZBKETIKQSRAyCZvDzGFW4mFZ5ursbK5PTwde7Ha7y1Wtce73+9lut3Pz9OEtpwUJQiZByCQImQQhkyBkEoRMgpBJEDIJQiZByCQImQQhkyBkEoRMgpBJEDIJQiZByCQImQQhkyBkEoRMgpBJEDIJQiZByCQ8b7/dzko8ry0uA+/cPQLIAx2ZoRffTwAAAABJRU5ErkJggg==" alt="">
+      <p class="text-center">UAE</p>
+      </div>
+      <div class="">
+        <img src="https://www.accountspoint.com/assets/Newzealand-71ed3a35.png" alt="">
+      <p class="text-center">NEW ZEALAND</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="mt-4 bg-black ">
+    <div class="flex justify-between text-white">
+      <div class="p-2">
+        <div class="ml-2"><img src="https://www.accountspoint.com/assets/Accountlogo-1a9fe589.png" alt="">
+        </div>
+        <p class="ml-2">
+          Address: <br />
+
+          Accounts Point Mahalakshmipuram, 1466, 14th Main Rd, near Shankar Mutt Road,<br /> Mahalakshmipuram,
+          Bengaluru,
+          Karnataka
+          <br /> India
+        </p>
+        <p class="ml-2">Contact:</p>
+        <p class="ml-2">
+          +91-99-803-31886
+        </p>
+        <p class="ml-2">+61-39-013-7786</p>
+        <p>
+        <p class="ml-2">
+          <a href="mailto:info@accountspoint.com">
+            info@accountspoint.com
+        </p>
+        </a>
+        </p>
+        <div class="flex ml-2 mt-2">
+          <img class="pr-1"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADPSURBVHgBtVQLDYMwEH0lCJgEJMwBkzAkzMEcwBRMAlaYAnAAEnDQvcuOpCPHUmj2ktde3qUvd/3Be1/7dNRORgAd+cIxlOQF6tjgIGStGGRG4ko+yRN2IDO0mrxDyt2B3NAeatIh0agjB+fcrO0JZ7KQJPXBMrJak7b6VTzq3NN8JIsYI2gVYTyRFXlTrV0vyBGHii1NEnyuHVrO57DNLMZlMVFMQaXYZRSDvxrNG/EvDeZbk4204o28/dYE4WlYF9DSluMvE36A8qu0RDRvql3xQvi2eY0AAAAASUVORK5CYII="
+            alt="">
+          <img class="px-1"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE+SURBVHgBpVULVcQwEEx4JyAo4CQEB8UBKAAHFAUHCgAF4KA4aB0QB0VCHYSdMim5XHJt7+a9eWnzmexkN61WCbz3VhqrlsFprV12BELC1q9HL9wGHU0xdHwLB+G78EvNw9DJjs83U7TcZW+npcAarm1jq8DDqSLS1tSwG/WfAFdYXHEObHViq+PzNpqGI3od5yEyql8lQqaQpIZjiNJEEY8uL1QZH8JK+CK8JJ+Et8JGIv0RDjlLBxHCJvvqzPxnjlVR32yEYfJnZuyNbbb4S4KDmodZIxgyXmfG7tl22ZVHstyGc2RWwV3IdDJ3OsO5smkOq2bcyJQEN6oAlsQdswni3bGwU5hY3ZZKZCkilzZ0wEbvz/s49HgPny8o46LDFm6GU8tKB7fmUf1Zvsbtye20Fu1kNUSYWDjrF/AL0czVvMnWtGcAAAAASUVORK5CYII="
+            alt="">
+          <img class="px-1"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFHSURBVHgBpVSLUcMwDHU4BsgGeAMYwRvQETJCNyCbpBsUJigbBCZwN0g3EBJ9ju0g27nj3b1LLOtnWXJnCiCinj8D85lpIb4xP5ifXdddzR6wI8ucKMIzL+CSyEXHtpw5GAlHzQABT0mwQ8nZAUpzM3J07GHjSpsetdsF0UUCS5ZEUjPbMD6iFGs5kIw4nNLsaBW0jxcwJPsjZL0shh3ZTWqt8oCCoyzOkrKpILRNQ8dL4Af+l0v4Mv/HlWkfTTmiBHrBsofMBePipKBJvSI/Uxnviv7yK0crCJ42ClJoB85gWPeK7v3m0V+C0ZSPf6ldCm37GMfOu32nQ9L6mGK3z6SMXskhTudBu910iPRnU3OIJGbYVF8cH45AcV5Xh3D0RvGZc6YGyt87SgwXyud5IqXmXc0xfxzz1aCxzX0avpknbuybZvcDXjRfHjAy3doAAAAASUVORK5CYII="
+            alt="">
+        </div>
+      </div>
+      <div>
+        <p class=" text-sm md:lg mt-2 text-left font-bold px-2 mr-2">
+          Home
+        </p>
+        <p class=" text-sm md:lg mt-1 font-bold  text-left px-2 mr-2">
+          Our Services
+        </p>
+        <p class=" text-sm md:lg mt-2 text-left font-bold px-2 mr-2">
+          About us
+        </p>
+        <p class=" text-sm md:lg mt-2 text-left font-bold px-2 mr-2">
+          How we work
+        </p>
+        <p class=" text-sm md:lg mt-2 text-left font-bold px-2 mr-2">
+          Careers
+        </p>
+        <p class=" text-sm md:lg mt-2 text-left font-bold px-2 mr-2">
+          Resources
+        </p>
+        <p class=" text-sm md:lg mt-2 text-left font-bold px-2 mr-2">
+          Contact us
+        </p>
+      </div>
+    </div>
+    <div class="h-12 bg-black text-white">
+      <p class="h-[2px] bg-white mx-4"></p>
+      <div class="flex justify-between">
+        <div class="ml-2 md:ml-3 text-sm md:lg">2010. All right reserved.</div>
+        <div class="mr-1 md:mr-3 text-sm md:lg">Website maintained by Kanzen Media</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
